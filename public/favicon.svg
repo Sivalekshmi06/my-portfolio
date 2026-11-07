@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="sbGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9333ea" />
+      <stop offset="50%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#4f46e5" />
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#e9d5ff" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Squircle -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="#0b0813" />
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#sbGrad)" opacity="0.25" />
+  <rect x="3" y="3" width="58" height="58" rx="15" fill="none" stroke="url(#sbGrad)" stroke-width="2" />
+
+  <!-- Monogram SB -->
+  <text x="32" y="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif" font-size="28" font-weight="800" fill="url(#textGrad)" text-anchor="middle" letter-spacing="-1">SB</text>
+
+  <!-- Small accent spark -->
+  <circle cx="49" cy="16" r="3" fill="#a855f7" filter="url(#glow)" />
+  <circle cx="49" cy="16" r="1.5" fill="#ffffff" />
+</svg>
