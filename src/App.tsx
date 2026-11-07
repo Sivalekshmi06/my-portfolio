@@ -1014,111 +1014,163 @@ function App() {
           </div>
         </section>
 
-        {/* EXPERIENCE & EDUCATION SECTION */}
+        {/* EXPERIENCE & EDUCATION SECTION - BALANCED 2-COLUMN WIDESCREEN GRID */}
         <section className="section experience-section" id="experience">
           <div className="section-heading">
-            <span className="section-label">03 / CAREER TIMELINE</span>
+            <span className="section-label">03 / CAREER & ACADEMICS</span>
             <h2>
               Experience & <span>Education.</span>
             </h2>
+            <p className="section-subtext">
+              My engineering trajectory from enterprise frontend product development to rigorous academic fundamentals.
+            </p>
           </div>
 
-          <div className="timeline">
-            {/* FULL TIME ROLE */}
-            <div className="timeline-item">
-              <div className="timeline-icon">
-                <BriefcaseBusiness size={20} />
-              </div>
-              <div className="timeline-content">
-                <div className="timeline-badge-row">
-                  <span className="timeline-date">2025 — PRESENT</span>
-                  <span className="current-badge">CURRENT ROLE</span>
-                  <span className="location-tag">Bengaluru, India</span>
+          <div className="career-split-grid">
+            {/* COLUMN 1: WORK EXPERIENCE */}
+            <div className="career-column">
+              <div className="career-column-header">
+                <div className="career-header-icon work-icon">
+                  <BriefcaseBusiness size={20} />
                 </div>
-                <h3>Associate</h3>
-                <h4>Acies Global</h4>
-                <ul className="timeline-bullets">
-                  <li>Contributing to the development and maintenance of the <strong>GreenMath</strong> enterprise platform.</li>
-                  <li>Developing and enhancing modular, reusable UI components using <strong>React.js</strong> and <strong>TypeScript</strong>.</li>
-                  <li>Integrating complex REST APIs and handling frontend state and data interactions.</li>
-                  <li>Building intuitive, user-centric functional modules and component workflows.</li>
-                  <li>Debugging, diagnosing, and resolving critical application defects to boost UI performance.</li>
-                </ul>
-                <div className="tags">
-                  <span>React.js</span>
-                  <span>TypeScript</span>
-                  <span>JavaScript</span>
-                  <span>Responsive UI</span>
-                  <span>REST APIs</span>
-                  <span>C#</span>
+                <div>
+                  <span className="career-column-eyebrow">PROFESSIONAL TRACK</span>
+                  <h3 className="career-column-title">Work Experience</h3>
+                </div>
+                <span className="career-count-pill">2 ROLES</span>
+              </div>
+
+              <div className="timeline-track">
+                {/* 1. Full-Time Role: Acies Global */}
+                <div className="timeline-card">
+                  <div className="timeline-card-header">
+                    <div className="timeline-badge-row">
+                      <span className="timeline-date">2025 — PRESENT</span>
+                      <span className="current-badge">CURRENT ROLE</span>
+                    </div>
+                    <span className="location-tag"><MapPin size={11} /> Bengaluru, India</span>
+                  </div>
+                  
+                  <div className="timeline-role-info">
+                    <h4 className="role-title">Associate</h4>
+                    <span className="company-name">Acies Global</span>
+                  </div>
+
+                  <p className="role-summary">
+                    Contributing to the development and maintenance of the <strong>GreenMath</strong> enterprise sustainability analytics platform.
+                  </p>
+
+                  <ul className="timeline-bullets">
+                    <li>Developing and enhancing modular, reusable UI components using <strong>React.js</strong> and <strong>TypeScript</strong>.</li>
+                    <li>Integrating complex REST APIs and handling frontend state and data interactions.</li>
+                    <li>Building intuitive, user-centric functional modules and component workflows.</li>
+                    <li>Debugging, diagnosing, and resolving critical application defects to boost UI performance.</li>
+                  </ul>
+
+                  <div className="tags">
+                    <span>React.js</span>
+                    <span>TypeScript</span>
+                    <span>JavaScript</span>
+                    <span>Responsive UI</span>
+                    <span>REST APIs</span>
+                    <span>C#</span>
+                  </div>
+                </div>
+
+                {/* 2. Internship: DLK Embedded Systems */}
+                <div className="timeline-card">
+                  <div className="timeline-card-header">
+                    <div className="timeline-badge-row">
+                      <span className="timeline-date">APRIL 2025 — MAY 2025</span>
+                      <span className="cgpa-pill">INTERNSHIP</span>
+                    </div>
+                    <span className="location-tag"><MapPin size={11} /> Tamil Nadu, India</span>
+                  </div>
+
+                  <div className="timeline-role-info">
+                    <h4 className="role-title">Embedded Systems Intern</h4>
+                    <span className="company-name">DLK Embedded Systems</span>
+                  </div>
+
+                  <p className="role-summary">
+                    Worked on embedded systems architectures, microcontrollers, and hands-on hardware-software integration, deepening analytical engineering fundamentals.
+                  </p>
+
+                  <div className="tags">
+                    <span>Embedded Systems</span>
+                    <span>Hardware & Firmware</span>
+                    <span>Problem Solving</span>
+                  </div>
                 </div>
               </div>
             </div>
 
-            {/* INTERNSHIP */}
-            <div className="timeline-item">
-              <div className="timeline-icon">
-                <Cpu size={20} />
-              </div>
-              <div className="timeline-content">
-                <div className="timeline-badge-row">
-                  <span className="timeline-date">APRIL 2025 — MAY 2025</span>
-                  <span className="cgpa-pill">INTERNSHIP</span>
+            {/* COLUMN 2: EDUCATION */}
+            <div className="career-column">
+              <div className="career-column-header">
+                <div className="career-header-icon edu-icon">
+                  <GraduationCap size={20} />
                 </div>
-                <h3>Embedded Systems Intern</h3>
-                <h4>DLK Embedded Systems</h4>
-                <p>
-                  Worked on embedded systems architectures, microcontrollers, and hands-on hardware-software
-                  integration, deepening analytical engineering fundamentals.
-                </p>
-                <div className="tags">
-                  <span>Embedded Systems</span>
-                  <span>Hardware & Firmware</span>
-                  <span>Problem Solving</span>
+                <div>
+                  <span className="career-column-eyebrow">ACADEMIC FOUNDATION</span>
+                  <h3 className="career-column-title">Education & Degrees</h3>
                 </div>
+                <span className="career-count-pill">HONORS</span>
               </div>
-            </div>
 
-            {/* COLLEGE EDUCATION */}
-            <div className="timeline-item">
-              <div className="timeline-icon">
-                <GraduationCap size={20} />
-              </div>
-              <div className="timeline-content">
-                <div className="timeline-badge-row">
-                  <span className="timeline-date">2021 — 2025</span>
-                  <span className="cgpa-pill">CGPA: 8.1 / 10</span>
-                </div>
-                <h3>Bachelor of Engineering · Electronics & Communication</h3>
-                <h4>K. Ramakrishnan College of Technology</h4>
-                <p>
-                  Graduated with distinction (8.1 CGPA). Developed foundational excellence in digital systems,
-                  computational logic, algorithms, and led a patent-related hardware & safety innovation initiative.
-                </p>
-                <div className="tags">
-                  <span>Electronics & Communication</span>
-                  <span>8.1 CGPA</span>
-                  <span>Innovation</span>
-                  <span>Research</span>
-                </div>
-              </div>
-            </div>
+              <div className="timeline-track">
+                {/* 1. College Degree: KRCT */}
+                <div className="timeline-card">
+                  <div className="timeline-card-header">
+                    <div className="timeline-badge-row">
+                      <span className="timeline-date">2021 — 2025</span>
+                      <span className="cgpa-pill">CGPA: 8.1 / 10</span>
+                    </div>
+                    <span className="location-tag">Anna University</span>
+                  </div>
 
-            {/* SCHOOL EDUCATION */}
-            <div className="timeline-item">
-              <div className="timeline-icon">
-                <GraduationCap size={20} />
-              </div>
-              <div className="timeline-content">
-                <div className="timeline-badge-row">
-                  <span className="timeline-date">2019 — 2021</span>
-                  <span className="cgpa-pill">HSC: 86% · SSLC: 84%</span>
+                  <div className="timeline-role-info">
+                    <h4 className="role-title">B.E. Electronics & Communication</h4>
+                    <span className="company-name">K. Ramakrishnan College of Technology</span>
+                  </div>
+
+                  <p className="role-summary">
+                    Graduated with distinction (8.1 CGPA). Developed foundational excellence in digital systems, computational logic, and algorithms, while spearheading a patent-related hardware & safety innovation initiative (Plumb Guard Shield).
+                  </p>
+
+                  <div className="tags">
+                    <span>Electronics & Communication</span>
+                    <span>8.1 CGPA</span>
+                    <span>Patent Innovation</span>
+                    <span>Research</span>
+                  </div>
                 </div>
-                <h3>Higher Secondary & Secondary School</h3>
-                <h4>Holy Cross Girls Higher Secondary School</h4>
-                <p>
-                  Built high academic consistency with 86% in Higher Secondary Certificate (HSC) and 84% in Secondary School Leaving Certificate (SSLC).
-                </p>
+
+                {/* 2. School Education: Holy Cross */}
+                <div className="timeline-card">
+                  <div className="timeline-card-header">
+                    <div className="timeline-badge-row">
+                      <span className="timeline-date">2018 — 2021</span>
+                      <span className="cgpa-pill">HSC: 86% · SSLC: 84%</span>
+                    </div>
+                    <span className="location-tag">State Board</span>
+                  </div>
+
+                  <div className="timeline-role-info">
+                    <h4 className="role-title">Higher Secondary & Secondary School</h4>
+                    <span className="company-name">Holy Cross Girls Higher Secondary School</span>
+                  </div>
+
+                  <p className="role-summary">
+                    Built high academic consistency with 86% in Higher Secondary Certificate (HSC) and 84% in Secondary School Leaving Certificate (SSLC) with focus on science and mathematics.
+                  </p>
+
+                  <div className="tags">
+                    <span>Higher Secondary (86%)</span>
+                    <span>SSLC (84%)</span>
+                    <span>Academic Consistency</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
