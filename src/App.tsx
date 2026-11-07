@@ -13,8 +13,6 @@ import {
   Check,
   Copy,
   Layers,
-  Database,
-  Terminal,
   Cpu,
   Trophy,
   Award,
