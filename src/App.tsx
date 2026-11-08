@@ -852,9 +852,17 @@ function App() {
                   <span>React.js & TypeScript Specialist</span>
                 </div>
 
-                {/* 2. Center Monogram */}
-                <div className="profile-monogram-container">
-                  <div className="profile-monogram">SB</div>
+                {/* 2. Center Profile Portrait with Ambient Glow Frame */}
+                <div className="profile-portrait-container">
+                  <div className="profile-portrait-glow" />
+                  <div className="profile-portrait-frame">
+                    <img
+                      src="./profile.jpg"
+                      alt="Sivalekshmi Balu - Associate @ Acies Global"
+                      className="profile-portrait-img"
+                      loading="eager"
+                    />
+                  </div>
                 </div>
 
                 {/* Floating Tag 2 (A bit outside on the right as marked) */}
@@ -1220,7 +1228,7 @@ function App() {
                 </div>
 
                 <p className="academic-summary">
-                  Demonstrated consistent academic excellence with 86% in Higher Secondary Certificate (HSC) and 84% in Secondary School Leaving Certificate (SSLC) with focus on mathematics and physical sciences.
+                  Demonstrated consistent academic excellence with 86% in Higher Secondary Certificate (HSC) and 84% in Secondary School Leaving Certificate (SSLC) with focus on mathematics and Computer sciences.
                 </p>
 
                 <div className="tags">
