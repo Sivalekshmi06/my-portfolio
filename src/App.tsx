@@ -19,6 +19,7 @@ import {
   MapPin,
   Phone,
   FileCheck2,
+  ShieldCheck,
 } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
@@ -402,6 +403,32 @@ const achievements = [
   },
   {
     number: "02",
+    icon: ShieldCheck,
+    title: "Salesforce Administrator Virtual Internship",
+    issuer: "SmartInternz · AICTE · Salesforce Partner",
+    category: "VIRTUAL INTERNSHIP & SUPER BADGES",
+    year: "2024",
+    description:
+      "Completed an 8-week virtual internship covering Salesforce fundamentals, organizational setup, and process automation. Earned Super Badges in Security Specialist, Business Administration, Lightning Reports & Dashboards, and Admin Super Set.",
+    accent: "cyan",
+    color: "#38bdf8",
+    tags: ["Salesforce Admin", "Trailhead Super Badges", "Security Specialist", "Process Automation"],
+  },
+  {
+    number: "03",
+    icon: Sparkles,
+    title: "ICT Academy Learnathon 2023",
+    issuer: "ICT Academy · Industry Partners",
+    category: "NATIONAL DIGITAL UPSKILLING",
+    year: "2023",
+    description:
+      "Successfully completed national Learnathon 2023 digital upskilling in partnership with Microsoft, AWS Academy, Google for Developers, MathWorks, MongoDB, Celonis, and VMware.",
+    accent: "emerald",
+    color: "#34d399",
+    tags: ["Learnathon 2023", "ICT Academy", "Industry Upskilling", "Emerging Tech"],
+  },
+  {
+    number: "04",
     icon: Award,
     title: "NPTEL Soft Skills Elite Honors",
     issuer: "IIT Madras · 73% Silver",
@@ -414,7 +441,7 @@ const achievements = [
     tags: ["Leadership", "Communication", "Top Percentile"],
   },
   {
-    number: "03",
+    number: "05",
     icon: FileCheck2,
     title: "CDAC Artificial Intelligence",
     issuer: "CDAC · 87% Distinction",
@@ -427,7 +454,7 @@ const achievements = [
     tags: ["87% Distinction", "AI Algorithms", "Advanced Computing"],
   },
   {
-    number: "04",
+    number: "06",
     icon: Sparkles,
     title: "Microsoft AI Builder & ML Challenge",
     issuer: "Microsoft Learn · Azure",
@@ -440,7 +467,7 @@ const achievements = [
     tags: ["Microsoft Azure", "AI Workflows", "Model Training"],
   },
   {
-    number: "05",
+    number: "07",
     icon: Cpu,
     title: "UiPath Process Automation",
     issuer: "UiPath Academy · RPA",
@@ -453,7 +480,7 @@ const achievements = [
     tags: ["RPA Automation", "Workflow Logic", "Enterprise Bot"],
   },
   {
-    number: "06",
+    number: "08",
     icon: Layers,
     title: "Google Cloud & Analytics",
     issuer: "Google · Cloud Fundamentals",
