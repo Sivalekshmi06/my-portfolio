@@ -430,15 +430,15 @@ const achievements = [
   {
     number: "04",
     icon: Award,
-    title: "NPTEL Soft Skills Elite Honors",
-    issuer: "IIT Madras · 73% Silver",
+    title: "Developing Soft Skills and Personality",
+    issuer: "IIT Kanpur · NPTEL Elite (73%)",
     category: "ELITE CERTIFICATION",
     year: "2024",
     description:
-      "Earned Silver Category honors demonstrating top percentile professional communication, workplace leadership, and collaborative team ethics.",
+      "Awarded Elite Certification by IIT Kanpur with a 73% consolidated score across proctored evaluation and assignments among 10,687 candidates nationwide.",
     accent: "violet",
     color: "#c084fc",
-    tags: ["Leadership", "Communication", "Top Percentile"],
+    tags: ["Elite (73%)", "IIT Kanpur", "Soft Skills & Leadership", "SWAYAM MoE"],
   },
   {
     number: "05",
