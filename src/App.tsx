@@ -1014,7 +1014,7 @@ function App() {
           </div>
         </section>
 
-        {/* EXPERIENCE & EDUCATION SECTION - BALANCED 2-COLUMN WIDESCREEN GRID */}
+        {/* EXPERIENCE & EDUCATION SECTION - CREATIVE FLAGSHIP BENTO DECK */}
         <section className="section experience-section" id="experience">
           <div className="section-heading">
             <span className="section-label">03 / CAREER & ACADEMICS</span>
@@ -1022,154 +1022,185 @@ function App() {
               Experience & <span>Education.</span>
             </h2>
             <p className="section-subtext">
-              My engineering trajectory from enterprise frontend product development to rigorous academic fundamentals.
+              Engineering impact at Acies Global coupled with a distinguished academic and research background.
             </p>
           </div>
 
-          <div className="career-split-grid">
-            {/* COLUMN 1: WORK EXPERIENCE */}
-            <div className="career-column">
-              <div className="career-column-header">
-                <div className="career-header-icon work-icon">
-                  <BriefcaseBusiness size={20} />
+          <div className="experience-bento-grid">
+            {/* LEFT: ENTERPRISE COMMAND STATION (ACIES GLOBAL & GREENMATH) */}
+            <div className="experience-flagship-card">
+              <div className="flagship-ambient-glow" />
+
+              {/* Station Header */}
+              <div className="flagship-header">
+                <div className="flagship-identity">
+                  <div className="company-avatar-box">
+                    <span>AG</span>
+                    <span className="avatar-pulse" />
+                  </div>
+                  <div>
+                    <div className="flagship-role-row">
+                      <h3 className="flagship-role">Associate</h3>
+                      <span className="live-status-pill">
+                        <span className="live-status-dot" />
+                        ACTIVE PRODUCTION ROLE
+                      </span>
+                    </div>
+                    <div className="flagship-company-row">
+                      <span className="flagship-company">Acies Global</span>
+                      <span className="flagship-dot-divider">•</span>
+                      <span className="flagship-location"><MapPin size={12} /> Bengaluru, India (IST)</span>
+                    </div>
+                  </div>
                 </div>
-                <div>
-                  <span className="career-column-eyebrow">PROFESSIONAL TRACK</span>
-                  <h3 className="career-column-title">Work Experience</h3>
+
+                <div className="flagship-tenure-badge">
+                  <span className="tenure-range">2025 — PRESENT</span>
+                  <span className="tenure-duration">~1.5 YRS PRODUCT EXP</span>
                 </div>
-                <span className="career-count-pill">2 ROLES</span>
               </div>
 
-              <div className="timeline-track">
-                {/* 1. Full-Time Role: Acies Global */}
-                <div className="timeline-card">
-                  <div className="timeline-card-header">
-                    <div className="timeline-badge-row">
-                      <span className="timeline-date">2025 — PRESENT</span>
-                      <span className="current-badge">CURRENT ROLE</span>
-                    </div>
-                    <span className="location-tag"><MapPin size={11} /> Bengaluru, India</span>
+              {/* Product Featurette Panel: GreenMath Platform */}
+              <div className="flagship-product-panel">
+                <div className="product-panel-header">
+                  <div className="product-title-wrap">
+                    <span className="product-category-eyebrow">ENTERPRISE PLATFORM</span>
+                    <h4 className="product-name">GreenMath Sustainability Suite</h4>
                   </div>
-                  
-                  <div className="timeline-role-info">
-                    <h4 className="role-title">Associate</h4>
-                    <span className="company-name">Acies Global</span>
+                  <span className="product-status-tag">CORE PLATFORM</span>
+                </div>
+                <p className="product-description">
+                  Contributing to the engineering and feature architecture of an enterprise sustainability and ESG analytics platform. Building dynamic data visualization modules, responsive workflows, and clean client-server pipelines.
+                </p>
+              </div>
+
+              {/* Core Impact Pillars (4 Grid Tiles) */}
+              <div className="flagship-impact-grid">
+                <div className="impact-tile">
+                  <div className="impact-icon-wrap">
+                    <Code2 size={16} />
                   </div>
-
-                  <p className="role-summary">
-                    Contributing to the development and maintenance of the <strong>GreenMath</strong> enterprise sustainability analytics platform.
-                  </p>
-
-                  <ul className="timeline-bullets">
-                    <li>Developing and enhancing modular, reusable UI components using <strong>React.js</strong> and <strong>TypeScript</strong>.</li>
-                    <li>Integrating complex REST APIs and handling frontend state and data interactions.</li>
-                    <li>Building intuitive, user-centric functional modules and component workflows.</li>
-                    <li>Debugging, diagnosing, and resolving critical application defects to boost UI performance.</li>
-                  </ul>
-
-                  <div className="tags">
-                    <span>React.js</span>
-                    <span>TypeScript</span>
-                    <span>JavaScript</span>
-                    <span>Responsive UI</span>
-                    <span>REST APIs</span>
-                    <span>C#</span>
-                  </div>
+                  <h5>Modular UI Engineering</h5>
+                  <p>Developing reusable, accessible React.js & TypeScript UI component libraries with strict type contracts.</p>
                 </div>
 
-                {/* 2. Internship: DLK Embedded Systems */}
-                <div className="timeline-card">
-                  <div className="timeline-card-header">
-                    <div className="timeline-badge-row">
-                      <span className="timeline-date">APRIL 2025 — MAY 2025</span>
-                      <span className="cgpa-pill">INTERNSHIP</span>
-                    </div>
-                    <span className="location-tag"><MapPin size={11} /> Tamil Nadu, India</span>
+                <div className="impact-tile">
+                  <div className="impact-icon-wrap">
+                    <Layers size={16} />
                   </div>
+                  <h5>API & Data Pipelines</h5>
+                  <p>Integrating complex RESTful API endpoints, managing asynchronous state, and frontend caching layers.</p>
+                </div>
 
-                  <div className="timeline-role-info">
-                    <h4 className="role-title">Embedded Systems Intern</h4>
-                    <span className="company-name">DLK Embedded Systems</span>
+                <div className="impact-tile">
+                  <div className="impact-icon-wrap">
+                    <Sparkles size={16} />
                   </div>
+                  <h5>Reliability & Auth</h5>
+                  <p>Implementing client error boundaries, user session timeout handling, and secure authentication flows.</p>
+                </div>
 
-                  <p className="role-summary">
-                    Worked on embedded systems architectures, microcontrollers, and hands-on hardware-software integration, deepening analytical engineering fundamentals.
-                  </p>
-
-                  <div className="tags">
-                    <span>Embedded Systems</span>
-                    <span>Hardware & Firmware</span>
-                    <span>Problem Solving</span>
+                <div className="impact-tile">
+                  <div className="impact-icon-wrap">
+                    <Cpu size={16} />
                   </div>
+                  <h5>Defect Diagnosis & Speed</h5>
+                  <p>Diagnosing application bottlenecks, resolving critical defects, and boosting UI runtime responsiveness.</p>
+                </div>
+              </div>
+
+              {/* Tech Stack Matrix */}
+              <div className="flagship-tech-footer">
+                <span className="tech-footer-label">STACK & TOOLS:</span>
+                <div className="tags">
+                  <span>React.js</span>
+                  <span>TypeScript</span>
+                  <span>JavaScript</span>
+                  <span>Responsive UI</span>
+                  <span>REST APIs</span>
+                  <span>C#</span>
+                  <span>Component Systems</span>
                 </div>
               </div>
             </div>
 
-            {/* COLUMN 2: EDUCATION */}
-            <div className="career-column">
-              <div className="career-column-header">
-                <div className="career-header-icon edu-icon">
-                  <GraduationCap size={20} />
+            {/* RIGHT: ACADEMIC PEDIGREE & HONORS (2 STACKED CARDS) */}
+            <div className="academics-column">
+              {/* Card 1: College Degree (KRCT) */}
+              <div className="academic-card flagship-academic">
+                <div className="academic-top-row">
+                  <div className="academic-icon-wrap">
+                    <GraduationCap size={20} />
+                  </div>
+                  <div className="academic-distinction-badge">
+                    <span className="cgpa-highlight">8.1</span>
+                    <span className="cgpa-scale">/ 10 CGPA</span>
+                  </div>
                 </div>
-                <div>
-                  <span className="career-column-eyebrow">ACADEMIC FOUNDATION</span>
-                  <h3 className="career-column-title">Education & Degrees</h3>
+
+                <span className="academic-level-eyebrow">BACHELOR OF ENGINEERING</span>
+                <h4 className="academic-degree-title">Electronics & Communication Engineering</h4>
+                <p className="academic-institution">K. Ramakrishnan College of Technology · Anna University</p>
+                
+                <div className="academic-timeline-pill">
+                  <span>2021 — 2025</span>
+                  <span className="academic-grade-pill">FIRST CLASS DISTINCTION</span>
                 </div>
-                <span className="career-count-pill">HONORS</span>
+
+                <p className="academic-summary">
+                  Graduated with 8.1 CGPA. Built foundational mastery in digital computational logic, system architecture, and algorithms, while spearheading high-impact innovation initiatives.
+                </p>
+
+                {/* Accolades Pills */}
+                <div className="academic-accolades-row">
+                  <div className="accolade-item">
+                    <Award size={13} className="text-accent" />
+                    <span><strong>Patent Innovation:</strong> Plumb Guard Shield</span>
+                  </div>
+                  <div className="accolade-item">
+                    <Trophy size={13} className="text-warning" />
+                    <span><strong>3rd Place Podium:</strong> Intel AI Hackathon 2024</span>
+                  </div>
+                </div>
+
+                <div className="tags">
+                  <span>Digital Systems</span>
+                  <span>Algorithms</span>
+                  <span>System Design</span>
+                  <span>Research</span>
+                </div>
               </div>
 
-              <div className="timeline-track">
-                {/* 1. College Degree: KRCT */}
-                <div className="timeline-card">
-                  <div className="timeline-card-header">
-                    <div className="timeline-badge-row">
-                      <span className="timeline-date">2021 — 2025</span>
-                      <span className="cgpa-pill">CGPA: 8.1 / 10</span>
-                    </div>
-                    <span className="location-tag">Anna University</span>
+              {/* Card 2: Schooling Foundation (Holy Cross) */}
+              <div className="academic-card">
+                <div className="academic-top-row">
+                  <div className="academic-icon-wrap school-icon">
+                    <GraduationCap size={18} />
                   </div>
-
-                  <div className="timeline-role-info">
-                    <h4 className="role-title">B.E. Electronics & Communication</h4>
-                    <span className="company-name">K. Ramakrishnan College of Technology</span>
-                  </div>
-
-                  <p className="role-summary">
-                    Graduated with distinction (8.1 CGPA). Developed foundational excellence in digital systems, computational logic, and algorithms, while spearheading a patent-related hardware & safety innovation initiative (Plumb Guard Shield).
-                  </p>
-
-                  <div className="tags">
-                    <span>Electronics & Communication</span>
-                    <span>8.1 CGPA</span>
-                    <span>Patent Innovation</span>
-                    <span>Research</span>
+                  <div className="school-scores-row">
+                    <span className="school-pill">HSC: 86%</span>
+                    <span className="school-pill">SSLC: 84%</span>
                   </div>
                 </div>
 
-                {/* 2. School Education: Holy Cross */}
-                <div className="timeline-card">
-                  <div className="timeline-card-header">
-                    <div className="timeline-badge-row">
-                      <span className="timeline-date">2018 — 2021</span>
-                      <span className="cgpa-pill">HSC: 86% · SSLC: 84%</span>
-                    </div>
-                    <span className="location-tag">State Board</span>
-                  </div>
+                <span className="academic-level-eyebrow">SCHOLASTIC FOUNDATION</span>
+                <h4 className="academic-degree-title">Higher Secondary & Secondary Education</h4>
+                <p className="academic-institution">Holy Cross Girls Higher Secondary School</p>
 
-                  <div className="timeline-role-info">
-                    <h4 className="role-title">Higher Secondary & Secondary School</h4>
-                    <span className="company-name">Holy Cross Girls Higher Secondary School</span>
-                  </div>
+                <div className="academic-timeline-pill">
+                  <span>2018 — 2021</span>
+                  <span className="academic-grade-pill">STATE BOARD EXCELLENCE</span>
+                </div>
 
-                  <p className="role-summary">
-                    Built high academic consistency with 86% in Higher Secondary Certificate (HSC) and 84% in Secondary School Leaving Certificate (SSLC) with focus on science and mathematics.
-                  </p>
+                <p className="academic-summary">
+                  Demonstrated consistent academic excellence with 86% in Higher Secondary Certificate (HSC) and 84% in Secondary School Leaving Certificate (SSLC) with focus on mathematics and physical sciences.
+                </p>
 
-                  <div className="tags">
-                    <span>Higher Secondary (86%)</span>
-                    <span>SSLC (84%)</span>
-                    <span>Academic Consistency</span>
-                  </div>
+                <div className="tags">
+                  <span>Higher Secondary (86%)</span>
+                  <span>SSLC (84%)</span>
+                  <span>Mathematics</span>
+                  <span>Science</span>
                 </div>
               </div>
             </div>
